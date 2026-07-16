@@ -8,10 +8,16 @@ A collection of [Claude Code](https://claude.com/claude-code) skills.
 
 ## Installing a skill
 
-Copy (or symlink) a skill directory into your Claude Code skills folder:
+Copy a skill directory into your Claude Code skills folder:
 
 ```sh
 cp -R focus-group ~/.claude/skills/
 ```
 
-Claude Code discovers it automatically. Trigger it with `/focus-group <your idea>`.
+Or symlink it, so edits in this repo are picked up live (no re-copying):
+
+```sh
+ln -s "$PWD/focus-group" ~/.claude/skills/focus-group
+```
+
+Either way, Claude Code discovers it automatically. Trigger it with `/focus-group <your idea>`.
